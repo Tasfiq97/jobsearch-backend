@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
-const port = 5000;
+const port = process.env.PORT;
 require("dotenv").config();
 
 app.use(cors());
